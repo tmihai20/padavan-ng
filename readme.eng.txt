@@ -15,7 +15,7 @@ Instructions to independently build firmware for your router from source in Ubun
 
 6. Go to your preferred directory (like /home) and run command for create the local copy of repository:
 	cd /home/$USER
-	git clone https://bitbucket.org/padavan/rt-n56u.git
+	git clone https://github.com/Linaro1985/padavan-ng.git
     This copies all the source code, creates a local git-repository. Directory /home/$USER/padavan-ng will be the root of the git-repository.
 
 7. Read the document /home/$USER/padavan-ng/readme.eng.txt and install all the required packages that are listed in it:
