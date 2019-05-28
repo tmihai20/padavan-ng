@@ -36,6 +36,6 @@ RUN apt-get install -qy \
 	python-docutils
 
 
-RUN git clone git clone https://github.com/Linaro1985/padavan-ng.git /home/$USER/padavan-ng
+RUN git clone https://github.com/Linaro1985/padavan-ng.git /home/$USER/padavan-ng
 
 RUN cd /home/$USER/padavan-ng/toolchain && ./clean_sources && ./build_toolchain
