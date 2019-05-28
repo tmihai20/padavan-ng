@@ -36,6 +36,6 @@ RUN apt-get install -qy \
 	python-docutils
 
 
-RUN git clone https://bitbucket.org/padavan/rt-n56u.git /opt/rt-n56u
+RUN git clone git clone https://github.com/Linaro1985/padavan-ng.git /home/$USER/padavan-ng
 
-RUN cd /opt/rt-n56u/toolchain-mipsel && ./clean_sources && ./build_toolchain_3.4.x
+RUN cd /home/$USER/padavan-ng/toolchain && ./clean_sources && ./build_toolchain
