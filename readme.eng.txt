@@ -57,7 +57,7 @@ Instructions to independently build firmware for your router from source in Ubun
     Save the file after edit.
 
 10. Clear source tree (every time before a new build)
-	sudo ./clear_tree
+	sudo ./clear_tree.sh
 
     Build the firmware:
     sudo ./build_firmware.sh
