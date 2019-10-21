@@ -26,12 +26,12 @@ Instructions to independently build firmware for your router from source in Ubun
 
 8. Go to directory with toolchain sources (cross-compiler and tools for building) and build it:
     cd /home/$USER/padavan-ng/toolchain
-    sudo ./clean_sources
-    sudo ./build_toolchain
+    sudo ./clean_sources.sh
+    sudo ./build_toolchain.sh
 
 	If you are getting an error about missing Makefile.in, then you should run:
 	automake --add-missing
-	sudo ./build_toolchain
+	sudo ./build_toolchain.sh
 
     The result will be collected the target of toolchain /home/$USER/padavan-ng/toolchain.
 
@@ -60,7 +60,7 @@ Instructions to independently build firmware for your router from source in Ubun
 	sudo ./clear_tree
 
     Build the firmware:
-    sudo ./build_firmware
+    sudo ./build_firmware.sh
 
     Custom firmware file can be found in the directory /home/$USER/padavan-ng/trunk/images.
 	VERY IMPORTANT: If you want to save the firmware that you have just created, copy it to another location, because the command clear_tree overwrites the directory images.
@@ -74,6 +74,5 @@ Instructions to independently build firmware for your router from source in Ubun
 
 14. If toolchain sources (cross-compiler and tools for building) is changed you must re-build it:
     cd /home/$USER/padavan-ng/toolchain
-    sudo ./clean_sources  
-    sudo ./clean_toolchain  
-    sudo ./build_toolchain
+    sudo ./clean_sources.sh
+    sudo ./build_toolchain.sh
